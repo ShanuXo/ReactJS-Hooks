@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import WindowWidth from './WindowWidth';
 import UseMemo from './UseMemo';
 import UseRef from './UseRef';
+import useContext from './useContext';
 const App = () => {
   const[resourceType,setResourceType] = useState('posts');
   const[items,setItem] = useState([]);
@@ -19,6 +20,7 @@ const App = () => {
       <UseMemo />
       <WindowWidth />
       <UseRef />
+      <useContext />
         <button onClick={() => setResourceType('posts')}>Posts</button>
         <button onClick={() => setResourceType('users')}>Users</button>
         <button onClick={() => setResourceType('comments')}>Comments</button>
